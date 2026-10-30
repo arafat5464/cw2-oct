@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Менеджер пользователей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Менеджер пользователей</h1>
+
+    <section class="panel">
+      <div class="toolbar">
+        <button id="loadBtn">Загрузить пользователей</button>
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Поиск по имени или email..."
+        >
+
+        <button id="promiseBtn" class="secondary">
+          Пример Promise
+        </button>
+      </div>
+
+      <div id="message"></div>
+
+      <p class="small-note">
+        Данные загружаются с JSONPlaceholder.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Список пользователей</h2>
+
+      <div id="users">
+        <div class="empty">
+          Нажми «Загрузить пользователей».
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

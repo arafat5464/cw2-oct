@@ -1,0 +1,152 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #263247;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #273653;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 24px #2632470d;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button, input {
+  font: inherit;
+  border-radius: 9px;
+  padding: 11px 14px;
+}
+
+input {
+  flex: 1;
+  min-width: 190px;
+  border: 1px solid #cbd5e1;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background: #526fe5;
+  font-weight: bold;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.secondary {
+  background: #64748b;
+}
+
+.delete {
+  background: #e45b68;
+}
+
+#message {
+  min-height: 22px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+#users {
+  display: grid;
+  gap: 12px;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #657fe8, #9b72d7);
+}
+
+.user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-info h3 {
+  margin: 0 0 7px;
+}
+
+.user-info p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #64748b;
+  overflow-wrap: anywhere;
+}
+
+.user-info a {
+  color: #4969d8;
+  text-decoration: none;
+}
+
+.empty {
+  text-align: center;
+  color: #718096;
+  padding: 24px;
+}
+
+.small-note {
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 560px) {
+  .user-card {
+    flex-wrap: wrap;
+  }
+
+  .delete {
+    margin-left: auto;
+  }
+}
